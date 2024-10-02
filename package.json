@@ -1,5 +1,5 @@
 {
-  "name": "webjsx-ssr",
+  "name": "web-components-ssr",
   "version": "0.0.1",
   "type": "module",
   "devDependencies": {
