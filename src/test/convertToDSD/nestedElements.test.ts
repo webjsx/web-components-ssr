@@ -50,7 +50,7 @@ describe("convertToDSD - Nested Custom Elements", () => {
     // Check parent-element
     expect(newRoot.tagName.toLowerCase()).to.equal("parent-element");
     const parentTemplate = newRoot.querySelector(
-      "template[shadowroot='open']"
+      "template[shadowrootmode='open']"
     ) as HTMLTemplateElement;
     expect(parentTemplate).to.not.be.null;
 
@@ -64,7 +64,7 @@ describe("convertToDSD - Nested Custom Elements", () => {
 
     // Check child-element's template
     const childTemplate = childElement?.querySelector(
-      "template[shadowroot='open']"
+      "template[shadowrootmode='open']"
     ) as HTMLTemplateElement;
     expect(childTemplate).to.not.be.null;
 

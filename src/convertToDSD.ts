@@ -25,7 +25,7 @@ export function convertToDSD(rootElement: HTMLElement): HTMLElement {
 
           if (shadowRoot && shadowRoot.mode === "open") {
             const template = document.createElement("template");
-            template.setAttribute("shadowroot", "open");
+            template.setAttribute("shadowrootmode", "open");
 
             // Recursively process shadowRoot's child nodes and append to template
             shadowRoot.childNodes.forEach((child) => {

@@ -32,7 +32,7 @@ describe("convertToDSD - Shadow DOM", () => {
     const root = document.getElementById("root") as HTMLElement;
     const newRoot = convertToDSD(root);
 
-    const template = newRoot.querySelector("template[shadowroot='open']") as HTMLTemplateElement;
+    const template = newRoot.querySelector("template[shadowrootmode='open']") as HTMLTemplateElement;
     expect(template).to.not.be.null;
     expect(template?.content.querySelector("p")?.textContent).to.equal(
       "Shadow Content"
@@ -59,7 +59,7 @@ describe("convertToDSD - Shadow DOM", () => {
     const root = document.getElementById("root") as HTMLElement;
     const newRoot = convertToDSD(root);
 
-    const template = newRoot.querySelector("template[shadowroot='open']");
+    const template = newRoot.querySelector("template[shadowrootmode='open']");
     expect(template).to.be.null;
   });
 });
