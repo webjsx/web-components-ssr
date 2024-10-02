@@ -1,7 +1,8 @@
 {
   "name": "web-components-ssr",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
+  "main": "./dist/index.js",
   "devDependencies": {
     "@types/chai": "^4.3.19",
     "@types/jsdom": "^21.1.7",
