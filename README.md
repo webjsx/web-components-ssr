@@ -1,2 +1,2 @@
-# webjsx-ssr
-Utility functions for SSR With WebJSX
+# web-components-ssr
+Utility functions for SSR With Web Components
